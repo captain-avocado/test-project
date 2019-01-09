@@ -1,8 +1,22 @@
 .header {
-  height: 50px;
+  display: flex;
+  border-bottom: 1px solid $border-gray;
 
-  @include phones {
-    height: 20px;
+  &__menus {
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid $border-gray;
+    flex: 1;
+  }
+
+  &__logo {
+    margin: 8px 16px;
+  }
+
+  &__menu {
+    &--right {
+      margin-left: 40px;
+    }
   }
 
 }

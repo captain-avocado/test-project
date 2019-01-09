@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  padding: 29px 0;
+  &__item {
+    margin-right: 40px;
+  }
+  
+  &__link {
+    font-size: 15px;
+    font-weight: 500;
+    transition: color .1s;
+    &:hover {
+      color: $text-light-gray;
+    }
+  }
+}
