@@ -1,16 +1,36 @@
 .num-row {
-  // font-size: 12px;
+
+  &--modal {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__minus {
     margin-right: 15px;
+
+    &--modal {
+      margin-right: 0;
+      margin-bottom: 30px;
+      color: #fff;
+    }
   }
 
   &__num {
     margin-right: 15px;
     color: $bc-red;
+
+    &--modal {
+      margin-right: 0;
+      margin-bottom: 30px;
+      color: #fff;
+    }
   }
 
   &__plus {
     color: $bc-logo;
+
+    &--modal {
+      color: #fff;
+    }
   }
 }
