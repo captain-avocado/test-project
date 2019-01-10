@@ -1,0 +1,16 @@
+.content {
+  border-right: 1px solid $border-gray;
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid $border-gray;
+
+    margin-bottom: 60px;
+  }
+  &__meals-info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

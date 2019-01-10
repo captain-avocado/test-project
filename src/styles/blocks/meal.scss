@@ -1,0 +1,32 @@
+.meal {
+  display: flex;
+  flex-direction: column;
+
+  &__top-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__num-row {
+    align-self: flex-end;
+    margin-bottom: 45px;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &__title-row {
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    font-size: 15px;
+  }
+
+  &__info-more {
+    font-weight: 600;
+  }
+}

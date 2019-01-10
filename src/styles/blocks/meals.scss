@@ -1,0 +1,11 @@
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -35px;
+
+  &__item {
+    margin-bottom: 90px;
+    width: 25%;
+    padding: 0 35px;
+  }
+}

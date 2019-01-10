@@ -1,0 +1,52 @@
+.tag-list {
+  display: flex;
+
+  &__item {
+    padding: 34px 0;
+    margin-right: 45px;
+    position: relative;
+    &.is-active {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 29px;
+        background-color: $bc-red;
+      }
+      
+      & .tag-list__link {
+        color: $bc-red;
+        opacity: 1;
+        & .tag-list__num {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    transition: color .1s;
+    &:hover {
+      color: $bc-red;
+      opacity: 1;
+      & .tag-list__num {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__num {
+    font-size: 9px;
+    opacity: .3;
+    transition: opacity .1s;
+  }
+}

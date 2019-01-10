@@ -13,7 +13,7 @@ const config = require('../config');
 
 const processors = [
   pxtorem({
-    rootValue: 16,
+    rootValue: 18,
     unitPrecision: 5,
     propList: ['*'],
     selectorBlackList: [],

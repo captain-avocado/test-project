@@ -1,0 +1,16 @@
+.num-row {
+  // font-size: 12px;
+
+  &__minus {
+    margin-right: 15px;
+  }
+
+  &__num {
+    margin-right: 15px;
+    color: $bc-red;
+  }
+
+  &__plus {
+    color: $bc-logo;
+  }
+}

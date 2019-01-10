@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+
+  &__section {
+    // width: 70%;
+    flex: 1;
+  }
+
+  &__aside {
+    // width: 30%;
+    // width: 325px;
+  }
+}

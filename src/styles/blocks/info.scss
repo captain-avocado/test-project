@@ -1,0 +1,42 @@
+.info {
+  color: #fff;
+
+  &__title {
+    font-size: 48px;
+    margin-right: 80px;
+    font-family: 'Spectral';
+    font-weight: bold;
+  }
+
+  &__container {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__left-side {
+    background-color: $bc-red;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__list {
+    margin-right: 90px;
+  }
+
+  &__about {
+    background-color: $bc-black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+}

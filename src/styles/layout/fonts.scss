@@ -11,3 +11,10 @@
     url("../fonts/TT Norms/TTNorms-Medium.woff") format("woff");
   font-weight: 500;
 }
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("../fonts/TT Norms/TTNorms-Bold.ttf") format("ttf"),
+    url("../fonts/TT Norms/TTNorms-Bold.woff") format("woff");
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+.info-list {
+  display: flex;
+
+  &__item {
+    margin-right: 56px;
+  }
+
+  &__subtext {
+    font-size: 14px;
+    opacity: .5;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}

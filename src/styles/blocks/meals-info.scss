@@ -1,0 +1,42 @@
+.meals-info {
+
+  padding-right: 47px;
+
+  &__title {
+    display: flex;
+    margin-bottom: 90px;
+  }
+
+  &__title-text {
+    font-size: 32px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+
+  &__title-num {
+    font-size: 18px;
+    opacity: .2;
+    font-weight: 600;
+  }
+
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sort-text {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  &__sort-icon {
+    width: 9px;
+    height: 4.5px;
+    fill: $text-black;
+  }
+}

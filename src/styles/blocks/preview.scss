@@ -1,0 +1,12 @@
+.preview {
+  min-height: 580px;
+  background-image: url(../images/bg/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  &__info {
+    margin-right: 195px;
+    flex-grow: 1;
+  }
+}
