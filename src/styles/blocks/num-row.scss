@@ -3,6 +3,8 @@
   &--modal {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__minus {
@@ -10,7 +12,7 @@
 
     &--modal {
       margin-right: 0;
-      margin-bottom: 30px;
+      // margin-bottom: auto;
       color: #fff;
     }
   }
@@ -21,7 +23,7 @@
 
     &--modal {
       margin-right: 0;
-      margin-bottom: 30px;
+      // margin-bottom: auto;
       color: #fff;
     }
   }
