@@ -37,6 +37,7 @@
   &__sort-icon {
     width: 9px;
     height: 4.5px;
-    fill: $text-black;
+    fill: none;
+    stroke: $text-black;
   }
 }

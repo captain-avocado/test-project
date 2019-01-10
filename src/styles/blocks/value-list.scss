@@ -3,6 +3,14 @@
 
   &__item {
     margin-right: 40px;
+    
+    opacity: 0;
+    transform: translateY(20%);
+    transition: opacity .35s, transform .35s;
+    &.is-active {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   &__num {

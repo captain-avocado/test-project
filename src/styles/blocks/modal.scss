@@ -23,6 +23,11 @@
     }
   }
 
+  &__text-title {
+    opacity: .4;
+    margin-bottom: 16px;
+  }
+  
   &__content {
     position: absolute;
     left: 0;
@@ -66,12 +71,12 @@
 
   &__right {
     position: relative;
+    background-color: #E8EAED;
   }
 
   &__descr-outer {
     min-width: 470px;
     padding: 116px 76px;
-    background-color: #E8EAED;
   }
 
   &__descr {
@@ -92,7 +97,7 @@
     }
   }
 
-  &__value {
+  &__value-title {
     transform: translateY(20%);
     opacity: 0;
     transition: transform .5s, opacity .25s;
@@ -119,11 +124,6 @@
     }
   }
 
-  &__text-title {
-    opacity: .4;
-    margin-bottom: 16px;
-  }
-
   &__close-icon {
     width: 30px;
     height: 30px;
@@ -137,6 +137,15 @@
     background-color: $bc-red;
     position: relative;
     height: 172px;
+
+    opacity: 0;
+    transform: translateY(20%);
+    transition: opacity .35s, transform .35s;
+
+    &.is-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   &__add-left {
@@ -154,7 +163,6 @@
     &.is-active {
       transform: translateY(0);
       opacity: 1;
-      
     }
   }
 

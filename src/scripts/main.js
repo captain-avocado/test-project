@@ -11,7 +11,9 @@ const targetElement = document.querySelector('.modal__content');
 const modalImg = document.querySelector('.modal__img');
 const modalTitle = document.querySelector('.modal__title');
 const modalTextBlocks = document.querySelectorAll('.modal__text-block');
-const modalValue = document.querySelector('.modal__value');
+const modalValueTitle = document.querySelector('.modal__value-title');
+const modalValueItems = document.querySelectorAll('.value-list__item');
+const modalAdd = document.querySelector('.modal__add-block');
 const modalAddLeft = document.querySelector('.modal__add-left');
 
 const triggers = document.querySelectorAll('.modal-trigger');
@@ -32,12 +34,22 @@ function toggleModal() {
     modalTextBlocks[1].classList.toggle('is-active');
   }, 600);
   setTimeout(() => {
-    modalValue.classList.toggle('is-active');
+    modalValueTitle.classList.toggle('is-active');
   }, 800);
+  
+  modalValueItems.forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.toggle('is-active');
+    }, 800 + i * 100);
+  });
+
+  setTimeout(() => {
+    modalAdd.classList.toggle('is-active');
+  }, 600);
 
   setTimeout(() => {
     modalAddLeft.classList.toggle('is-active');
-  }, 600);
+  }, 800);
 
   if (modal.classList.contains('is-active')) {
     disableBodyScroll(targetElement);
