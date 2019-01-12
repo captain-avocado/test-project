@@ -27,6 +27,11 @@
     opacity: .4;
     font-size: 21px;
     margin-bottom: 16px;
+
+    @include phones {
+      margin-bottom: 14px;
+    }
+
     @include phones-small {
       font-size: 17px;
     }
@@ -156,7 +161,7 @@
     }
 
     @include phones {
-      margin-bottom: 26px;
+      margin-bottom: 18px;
     }
 
     @include phones-small {
@@ -192,7 +197,7 @@
     }
 
     @include phones {
-      margin-bottom: 26px;
+      margin-bottom: 22px;
     }
 
     @include phones-small {
