@@ -220,7 +220,8 @@
     }
 
     @include phones {
-      height: 56px;
+      max-height: 50px;
+      min-height: 50px;
     }
   }
 
