@@ -53,12 +53,12 @@ function toggleModal() {
 
   if (modal.classList.contains('is-active')) {
     y = window.scrollY;
-    document.body.style.top = '-' + y + 'px';
-    document.body.style.position = 'fixed';
+    document.querySelector('.wrapper').style.top = '-' + y + 'px';
+    document.querySelector('.wrapper').style.position = 'fixed';
     disableBodyScroll(targetElement);
   } else {
-    document.body.style.top = '';
-    document.body.style.position = '';
+    document.querySelector('.wrapper').style.top = '';
+    document.querySelector('.wrapper').style.position = '';
     window.scrollTo(0, y);
     enableBodyScroll(targetElement);
   }
