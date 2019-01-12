@@ -1,10 +1,10 @@
 .meals-info {
 
   padding-right: 47px;
-
-  // &__container {
-  //   width: ;
-  // }
+  @include phones {
+    padding-right: 0;
+    justify-content: center;
+  }
 
   &__title {
     display: flex;
@@ -15,6 +15,12 @@
     font-size: 32px;
     font-weight: 600;
     margin-right: 5px;
+  }
+
+  &__title-text-more {
+    @include phones {
+      display: none;
+    }
   }
 
   &__title-num {
@@ -31,6 +37,10 @@
   &__sort {
     display: flex;
     align-items: center;
+
+    @include phones {
+      display: none;
+    }
   }
 
   &__sort-text {

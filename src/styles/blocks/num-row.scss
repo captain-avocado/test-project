@@ -5,6 +5,11 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    @include phones {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__minus {
@@ -12,8 +17,10 @@
 
     &--modal {
       margin-right: 0;
-      // margin-bottom: auto;
       color: #fff;
+      @include phones {
+        margin-right: 36px;
+      }
     }
   }
 
@@ -23,8 +30,10 @@
 
     &--modal {
       margin-right: 0;
-      // margin-bottom: auto;
       color: #fff;
+      @include phones {
+        margin-right: 36px;
+      }
     }
   }
 

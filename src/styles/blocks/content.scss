@@ -1,5 +1,8 @@
 .content {
   border-right: 1px solid $border-gray;
+  @include phones {
+    border: none;
+  }
   &__title {
     // max-width: 1578px;
     overflow: hidden;
@@ -22,11 +25,19 @@
       background: linear-gradient(270.17deg, #FFFFFF 9.25%, rgba(255, 255, 255, 0) 188.53%);
       // border: inherit;
     }
+
+    @include phones {
+      display: none;
+    }
   }
   &__meals-info {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    @include phones {
+      margin-top: 60px;
+      justify-content: center;
+    }
   }
   &__container {
     max-width: 90%;

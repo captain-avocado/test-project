@@ -3,6 +3,16 @@
 
   &__item {
     margin-right: 56px;
+    
+    &:not(:last-child) {
+      @include phones {
+        margin-right: 32px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__subtext {

@@ -25,6 +25,7 @@
 
   &__text-title {
     opacity: .4;
+    font-size: 21px;
     margin-bottom: 16px;
   }
   
@@ -41,6 +42,15 @@
     border-radius: 5px;
     
     display: flex;   
+
+
+    @include phones {
+      right: 0;
+      max-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+    }
     
   }
 
@@ -52,6 +62,10 @@
       transform: translateY(0);
       opacity: 1;
     }
+
+    @include phones {
+      max-width: 85%;
+    }
   }
 
   &__left {
@@ -61,6 +75,9 @@
     align-items: center;
 
     background-color: #fff;
+    @include phones {
+      height: 40%;
+    }
   }
 
   &__close {
@@ -72,16 +89,29 @@
   &__right {
     position: relative;
     background-color: #E8EAED;
+
+    @include phones {
+      position: static;
+    }
   }
 
   &__descr-outer {
     min-width: 470px;
     padding: 116px 76px;
+
+    @include phones {
+      padding: 40px 16px;
+      min-width: auto;
+    }
   }
 
   &__descr {
     max-width: 280px;
     flex: 1;
+
+    @include phones {
+      max-width: auto;
+    }
   }
 
   &__title {
@@ -95,6 +125,10 @@
       transform: translateY(0);
       opacity: 1;
     }
+
+    @include phones {
+      margin-bottom: 32px;
+    }
   }
 
   &__value-title {
@@ -103,7 +137,7 @@
     transition: transform .5s, opacity .25s;
     &.is-active {
       transform: translateY(0);
-      opacity: 1;
+      opacity: .4;
     }
   }
 
@@ -121,6 +155,10 @@
     &.is-active {
       transform: translateY(0);
       opacity: 1;
+    }
+
+    @include phones {
+      margin-bottom: 32px;
     }
   }
 
@@ -146,6 +184,10 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    @include phones {
+      height: 56px;
+    }
   }
 
   &__add-left {
@@ -164,6 +206,10 @@
       transform: translateY(0);
       opacity: 1;
     }
+
+    @include phones {
+      width: 50%;
+    }
   }
 
   &__add-right {
@@ -175,14 +221,38 @@
     align-items: center;
 
     font-weight: 600;
+    @include phones {
+      width: 50%;
+      margin-left: 50%;
+    }
   }
 
   &__price {
     padding-right: 40px;
     border-right: 1px solid rgba(#fff, .4);
+    @include phones {
+      display: none;
+    }
   }
 
   &__add-text {
     padding-left: 40px;
+
+    @include phones {
+      padding-left: 0;
+    }
+
+    &--phones {
+      display: none;
+      @include phones {
+        display: block;
+      }
+    }
+
+    &--desktop {
+      @include phones {
+        display: none;
+      }
+    }
   }
 }

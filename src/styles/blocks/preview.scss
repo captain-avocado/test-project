@@ -5,10 +5,12 @@
   background-size: cover;
   display: flex;
   align-items: flex-end;
-  &__info {
-    // margin-right: 195px;
-    // flex-grow: 1;
 
+  @include phones {
+    background-image: url(../images/bg/main_phones.jpg);
+  }
+
+  &__info {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;

@@ -11,6 +11,11 @@
 <body class="body">
   <div class="wrapper">
       <header class="header">
+          <div class="nav header__hamburger hamburger">
+              <svg class="hamburger__icon">
+                <use xlink:href="images/sprite.svg#menu"></use>
+              </svg>
+            </div>
           <div class="header__menus">
               <nav class="header__menu header__menu_left">
                   <ul class="menu">
@@ -68,7 +73,12 @@
                 <div class="info__bg"></div>
                 <div class="container info__container">
                   <div class="info__left-side">
-                    <div class="info__title">Ресторан</div>
+                    <div class="info__title-wrapper">
+                      <div class="info__title">Ресторан</div>
+                      <svg class="info__title-more">
+                        <use xlink:href="images/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
                     <ul class="info__list info-list">
                       <li class="info-list__item">
                         <div class="info-list__subtext">Кухня</div>
@@ -83,6 +93,11 @@
                         <div class="info-list__text">с 11:00 до 02:00</div>
                       </li>
                     </ul>
+                    <a href="#" class="info__sort sort">
+                      <svg class="sort__icon">
+                        <use xlink:href="images/sprite.svg#sort"></use>
+                      </svg>
+                    </a>
                   </div>
                   <div class="info__about">О ресторане</div>
                 </div>
@@ -200,7 +215,7 @@
                 <div class="container content__container">
                     <div class="meals-info__top-row">
                         <div class="meals-info__title">
-                            <div class="meals-info__title-text">Популярные блюда</div>
+                            <div class="meals-info__title-text">Популярные <span class="meals-info__title-text-more">блюда</span></div>
                             <div class="meals-info__title-num">12</div>
                           </div>
                           <a href="#" class="meals-info__sort">
@@ -403,6 +418,7 @@
           <aside class="aside main__aside">
             <div class="aside__order order">
               <div class="order__title">Мой заказ</div>
+              <div class="order__num">0</div>
               <div class="order__preview order-preview">
                 <img src="./images/content/order.png" class="order-preview__img">
                 <div class="order-preview__text">Пока пусто ;)</div>
@@ -469,7 +485,8 @@
                 </div>
                 <div class="modal__add-right">
                   <div class="modal__price">246 ₽</div>
-                  <a href="#" class="modal__add-text">Добавить</a>
+                  <a href="#" class="modal__add-text modal__add-text--desktop">Добавить</a>
+                  <a href="#" class="modal__add-text modal__add-text--mobile">Готово</a>
                 </div>
               </div>
             </div>

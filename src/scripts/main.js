@@ -53,13 +53,13 @@ function toggleModal() {
 
   if (modal.classList.contains('is-active')) {
     y = window.scrollY;
-    document.querySelector('.wrapper').style.top = '-' + y + 'px';
-    document.querySelector('.wrapper').style.position = 'fixed';
+    // document.body.style.top = '-' + y + 'px';
+    // document.body.style.position = 'fixed';
     disableBodyScroll(targetElement);
   } else {
-    document.querySelector('.wrapper').style.top = '';
-    document.querySelector('.wrapper').style.position = '';
-    window.scrollTo(0, y);
+    // document.body.style.top = '';
+    // document.body.style.position = '';
+    // window.scrollTo(0, y);
     enableBodyScroll(targetElement);
   }
 }

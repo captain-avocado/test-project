@@ -1,13 +1,23 @@
 .main {
   display: flex;
+  @include phones {
+    flex-direction: column;
+  }
 
   &__section {
     width: 85%;
+    @include phones {
+      width: 100%;
+    }
     // flex: 1;
   }
 
   &__aside {
     width: 15%;
+    @include phones {
+      width: 100%;
+      border-top: 1px solid #efefef;
+    }
     // width: 325px;
   }
 }

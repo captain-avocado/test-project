@@ -1,16 +1,42 @@
 .info {
   color: #fff;
+  position: relative;
 
   &__bg {
     width: 10%;
     background: #d62323;
+    @include phones {
+      display: none;
+    }
   }
 
-  &__title {
+  &__title-wrapper {
     font-size: 48px;
     margin-right: 80px;
     font-family: 'Spectral';
     font-weight: bold;
+
+    @include phones {
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include phones {
+      margin-right: 17px;
+    }
+  }
+
+  &__title-more {
+    display: none;
+    @include phones {
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+    }
   }
 
   &__container {
@@ -21,6 +47,9 @@
     // width: 100%;
     width: auto;
     margin-right: auto;
+    @include phones {
+      width: 100%;
+    }
   }
 
   &__left-side {
@@ -30,10 +59,22 @@
     justify-content: flex-end;
     align-items: center;
     flex: 1;
+
+    @include phones {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding: 32px 16px;
+      width: 100%;
+    }
   }
 
   &__list {
     margin-right: 90px;
+    @include phones {
+      margin-right: 0;
+    }
   }
 
   &__about {
@@ -45,5 +86,20 @@
     padding: 0 120px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &__sort {
+    display: none;
+
+    @include phones {
+      display: block;
+      position: absolute;
+      right: 25px;
+      bottom: 25px;
+    }
   }
 }
