@@ -1,16 +1,34 @@
 .content {
   border-right: 1px solid $border-gray;
   &__title {
-    width: 100%;
+    // max-width: 1578px;
+    overflow: hidden;
+    // width: 100%;
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid $border-gray;
 
     margin-bottom: 60px;
+
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 150px;
+      background: linear-gradient(270.17deg, #FFFFFF 9.25%, rgba(255, 255, 255, 0) 188.53%);
+      border: inherit;
+    }
   }
   &__meals-info {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+  &__container {
+    max-width: 90%;
   }
 }

@@ -52,6 +52,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.2.4",
     "body-scroll-lock": "^2.6.1"
   }
 }

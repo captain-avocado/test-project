@@ -1,8 +1,5 @@
 import bodyScrollLock from 'body-scroll-lock';
-
-// const bodyScrollLock = require('body-scroll-lock');
-
-// import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import Glide from '@glidejs/glide';
 
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
@@ -72,4 +69,17 @@ triggers.forEach((el) => {
 });
 
 window.addEventListener('click', windowOnClick);
+
+new Glide('.glide', {
+  // type: 'carousel',
+  perView: 10,
+  // gap: 40,
+}).mount();
+
+document.querySelectorAll('.tag-list__link').forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+});
+
 

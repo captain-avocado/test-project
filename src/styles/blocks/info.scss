@@ -1,6 +1,11 @@
 .info {
   color: #fff;
 
+  &__bg {
+    width: 10%;
+    background: #d62323;
+  }
+
   &__title {
     font-size: 48px;
     margin-right: 80px;
@@ -13,7 +18,9 @@
     height: 200px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
+    width: auto;
+    margin-right: auto;
   }
 
   &__left-side {
@@ -35,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 120px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
   }

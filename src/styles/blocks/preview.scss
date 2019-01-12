@@ -6,7 +6,11 @@
   display: flex;
   align-items: flex-end;
   &__info {
-    margin-right: 195px;
+    // margin-right: 195px;
+    // flex-grow: 1;
+
     flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
   }
 }

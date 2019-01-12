@@ -119,6 +119,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@glidejs/glide@^3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.2.4.tgz#2ea91d1b6c209983511026b93080f93b83e5e1c4"
+  integrity sha512-ylTX+3NB2XW/y5CCda9xRkO+q+016u6YL8X/zlNGkfDRAx/lm/UtFoXL1EBm+zUDYIAldeoLbloM2vJpH4YwZA==
+
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/identity-map/-/identity-map-1.0.2.tgz#1e6fe5d8027b1f285dc0d31762f566bccd73d5a9"

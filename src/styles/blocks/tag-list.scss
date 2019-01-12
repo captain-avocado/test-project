@@ -1,12 +1,18 @@
 .tag-list {
   display: flex;
 
-  &__item {
+  &__wrapper {
+    width: fit-content;
     padding: 34px 0;
-    margin-right: 45px;
     position: relative;
+  }
+
+  &__item {
+    // padding: 34px 0;
+    margin-right: 30px;
+    // position: relative;
     &.is-active {
-      &:after {
+      & .tag-list__wrapper:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -30,6 +36,7 @@
   &__link {
     display: flex;
     transition: color .1s;
+    // width: auto;
     &:hover {
       color: $bc-red;
       opacity: 1;
