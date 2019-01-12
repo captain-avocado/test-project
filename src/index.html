@@ -8,329 +8,215 @@
   <link rel="stylesheet" href="./styles/main.css">
   <title>Каталог</title>
 </head>
-<body>
-  <header class="header">
-    <div class="header__menus">
-        <nav class="header__menu header__menu_left">
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Рестораны
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Доставка
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Караоке
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__logo logo"></div>
-          <nav class="header__menu header__menu--right">
-              <ul class="menu">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    О нас
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    Новости
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </nav>
-    </div>
-    <div class="header__acc">
-      <a href="#" class="acc">
-          <svg class="acc__icon">
-            <use xlink:href="images/sprite.svg#account"></use>
-          </svg>
-        <div class="acc__text">Константин</div>
-      </a>
-    </div>
-  </header>
-  <main class="main">
-    <section class="section main__section">
-      <div class="section__preview preview">
-        <div class="preview__info info">
-          <div class="info__bg"></div>
-          <div class="container info__container">
-            <div class="info__left-side">
-              <div class="info__title">Ресторан</div>
-              <ul class="info__list info-list">
-                <li class="info-list__item">
-                  <div class="info-list__subtext">Кухня</div>
-                  <div class="info-list__text">Восточная</div>
-                </li>
-                <li class="info-list__item">
-                    <div class="info-list__subtext">Заказ</div>
-                    <div class="info-list__text">От 1000 ₽</div>
-                </li>
-                <li class="info-list__item">
-                  <div class="info-list__subtext">Доставка</div>
-                  <div class="info-list__text">с 11:00 до 02:00</div>
-                </li>
-              </ul>
-            </div>
-            <div class="info__about">О ресторане</div>
+<body class="body">
+  <div class="wrapper">
+      <header class="header">
+          <div class="header__menus">
+              <nav class="header__menu header__menu_left">
+                  <ul class="menu">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">
+                        Рестораны
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">
+                        Доставка
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">
+                        Караоке
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__logo logo"></div>
+                <nav class="header__menu header__menu--right">
+                    <ul class="menu">
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">
+                          О нас
+                        </a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">
+                          Новости
+                        </a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
           </div>
-        </div>
-      </div>
-      <div class="section__content content">
-        <div class="content__title">
-          <div class="container">
-            <div class="glide">
-              <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides tag-list">
-                      <li class="tag-list__item is-active glide__slide">
-                        <div class="tag-list__wrapper">
-                            <a href="#" class="tag-list__link">
-                                <div class="tag-list__text">Популярные</div>
-                                <div class="tag-list__num">12</div>
-                              </a>
-                        </div>
-                        </li>
-                        <li class="tag-list__item glide__slide">
-                          <div class="tag-list__wrapper">
-                            <a href="#" class="tag-list__link">
-                              <div class="tag-list__text">Популярные</div>
-                              <div class="tag-list__num">12</div>
-                            </a>
-                          </div>
-                        </li>
-                        <li class="tag-list__item glide__slide">
-                          <div class="tag-list__wrapper">
-                            <a href="#" class="tag-list__link">
-                              <div class="tag-list__text">Популярные</div>
-                                <div class="tag-list__num">12</div>
-                            </a>
-                          </div>
-                        </li>
-                        <li class="tag-list__item glide__slide">
-                            <div class="tag-list__wrapper">
-                                <a href="#" class="tag-list__link">
-                                    <div class="tag-list__text">Популярные</div>
-                                    <div class="tag-list__num">12</div>
-                                  </a>
-                            </div>
-                            </li>
-                            <li class="tag-list__item glide__slide">
+          <div class="header__acc">
+            <a href="#" class="acc">
+                <svg class="acc__icon">
+                  <use xlink:href="images/sprite.svg#account"></use>
+                </svg>
+              <div class="acc__text">Константин</div>
+            </a>
+          </div>
+        </header>
+        <main class="main">
+          <section class="section main__section">
+            <div class="section__preview preview">
+              <div class="preview__info info">
+                <div class="info__bg"></div>
+                <div class="container info__container">
+                  <div class="info__left-side">
+                    <div class="info__title">Ресторан</div>
+                    <ul class="info__list info-list">
+                      <li class="info-list__item">
+                        <div class="info-list__subtext">Кухня</div>
+                        <div class="info-list__text">Восточная</div>
+                      </li>
+                      <li class="info-list__item">
+                          <div class="info-list__subtext">Заказ</div>
+                          <div class="info-list__text">От 1000 ₽</div>
+                      </li>
+                      <li class="info-list__item">
+                        <div class="info-list__subtext">Доставка</div>
+                        <div class="info-list__text">с 11:00 до 02:00</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info__about">О ресторане</div>
+                </div>
+              </div>
+            </div>
+            <div class="section__content content">
+              <div class="content__title">
+                <div class="container">
+                  <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides tag-list">
+                            <li class="tag-list__item is-active glide__slide">
                               <div class="tag-list__wrapper">
-                                <a href="#" class="tag-list__link">
-                                  <div class="tag-list__text">Популярные</div>
-                                  <div class="tag-list__num">12</div>
-                                </a>
-                              </div>
-                            </li>
-                            <li class="tag-list__item glide__slide">
-                              <div class="tag-list__wrapper">
-                                <a href="#" class="tag-list__link">
-                                  <div class="tag-list__text">Популярные</div>
-                                    <div class="tag-list__num">12</div>
-                                </a>
-                              </div>
-                            </li>
-                            <li class="tag-list__item glide__slide">
-                                <div class="tag-list__wrapper">
-                                    <a href="#" class="tag-list__link">
-                                        <div class="tag-list__text">Популярные</div>
-                                        <div class="tag-list__num">12</div>
-                                      </a>
-                                </div>
-                                </li>
-                                <li class="tag-list__item glide__slide">
-                                  <div class="tag-list__wrapper">
-                                    <a href="#" class="tag-list__link">
+                                  <a href="#" class="tag-list__link">
                                       <div class="tag-list__text">Популярные</div>
                                       <div class="tag-list__num">12</div>
                                     </a>
-                                  </div>
-                                </li>
-                                <li class="tag-list__item glide__slide">
+                              </div>
+                              </li>
+                              <li class="tag-list__item glide__slide">
+                                <div class="tag-list__wrapper">
+                                  <a href="#" class="tag-list__link">
+                                    <div class="tag-list__text">Популярные</div>
+                                    <div class="tag-list__num">12</div>
+                                  </a>
+                                </div>
+                              </li>
+                              <li class="tag-list__item glide__slide">
+                                <div class="tag-list__wrapper">
+                                  <a href="#" class="tag-list__link">
+                                    <div class="tag-list__text">Популярные</div>
+                                      <div class="tag-list__num">12</div>
+                                  </a>
+                                </div>
+                              </li>
+                              <li class="tag-list__item glide__slide">
                                   <div class="tag-list__wrapper">
-                                    <a href="#" class="tag-list__link">
-                                      <div class="tag-list__text">Популярные</div>
-                                        <div class="tag-list__num">12</div>
-                                    </a>
-                                  </div>
-                                </li>
-                                <li class="tag-list__item glide__slide">
-                                    <div class="tag-list__wrapper">
-                                        <a href="#" class="tag-list__link">
-                                            <div class="tag-list__text">Популярные</div>
-                                            <div class="tag-list__num">12</div>
-                                          </a>
-                                    </div>
-                                    </li>
-                                    <li class="tag-list__item glide__slide">
-                                      <div class="tag-list__wrapper">
-                                        <a href="#" class="tag-list__link">
+                                      <a href="#" class="tag-list__link">
                                           <div class="tag-list__text">Популярные</div>
                                           <div class="tag-list__num">12</div>
                                         </a>
-                                      </div>
-                                    </li>
-                                    <li class="tag-list__item glide__slide">
+                                  </div>
+                                  </li>
+                                  <li class="tag-list__item glide__slide">
+                                    <div class="tag-list__wrapper">
+                                      <a href="#" class="tag-list__link">
+                                        <div class="tag-list__text">Популярные</div>
+                                        <div class="tag-list__num">12</div>
+                                      </a>
+                                    </div>
+                                  </li>
+                                  <li class="tag-list__item glide__slide">
+                                    <div class="tag-list__wrapper">
+                                      <a href="#" class="tag-list__link">
+                                        <div class="tag-list__text">Популярные</div>
+                                          <div class="tag-list__num">12</div>
+                                      </a>
+                                    </div>
+                                  </li>
+                                  <li class="tag-list__item glide__slide">
                                       <div class="tag-list__wrapper">
-                                        <a href="#" class="tag-list__link">
-                                          <div class="tag-list__text">Популярные</div>
-                                            <div class="tag-list__num">12</div>
-                                        </a>
+                                          <a href="#" class="tag-list__link">
+                                              <div class="tag-list__text">Популярные</div>
+                                              <div class="tag-list__num">12</div>
+                                            </a>
                                       </div>
-                                    </li>
-                  </ul>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content__meals-info meals-info">
-          <div class="container content__container">
-              <div class="meals-info__top-row">
-                  <div class="meals-info__title">
-                      <div class="meals-info__title-text">Популярные блюда</div>
-                      <div class="meals-info__title-num">12</div>
+                                      </li>
+                                      <li class="tag-list__item glide__slide">
+                                        <div class="tag-list__wrapper">
+                                          <a href="#" class="tag-list__link">
+                                            <div class="tag-list__text">Популярные</div>
+                                            <div class="tag-list__num">12</div>
+                                          </a>
+                                        </div>
+                                      </li>
+                                      <li class="tag-list__item glide__slide">
+                                        <div class="tag-list__wrapper">
+                                          <a href="#" class="tag-list__link">
+                                            <div class="tag-list__text">Популярные</div>
+                                              <div class="tag-list__num">12</div>
+                                          </a>
+                                        </div>
+                                      </li>
+                                      <li class="tag-list__item glide__slide">
+                                          <div class="tag-list__wrapper">
+                                              <a href="#" class="tag-list__link">
+                                                  <div class="tag-list__text">Популярные</div>
+                                                  <div class="tag-list__num">12</div>
+                                                </a>
+                                          </div>
+                                          </li>
+                                          <li class="tag-list__item glide__slide">
+                                            <div class="tag-list__wrapper">
+                                              <a href="#" class="tag-list__link">
+                                                <div class="tag-list__text">Популярные</div>
+                                                <div class="tag-list__num">12</div>
+                                              </a>
+                                            </div>
+                                          </li>
+                                          <li class="tag-list__item glide__slide">
+                                            <div class="tag-list__wrapper">
+                                              <a href="#" class="tag-list__link">
+                                                <div class="tag-list__text">Популярные</div>
+                                                  <div class="tag-list__num">12</div>
+                                              </a>
+                                            </div>
+                                          </li>
+                        </ul>
+                        </ul>
                     </div>
-                    <a href="#" class="meals-info__sort">
-                      <div class="meals-info__sort-text">По цене</div>
-                      <svg class="meals-info__sort-icon">
-                        <use xlink:href="images/sprite.svg#angle-bottom"></use>
-                      </svg>
-                    </a>
+                  </div>
+                </div>
               </div>
-                <ul class="meals-info__meals meals">
-                    <li class="meals__item meal">
-                        <div class="meal__top-area">
-                          <div class="meal__num-row num-row">
-                            <a href="#" class="num-row__minus">-</a>
-                            <span class="num-row__num">2</span>
-                            <a href="#" class="num-row__plus">+</a>
+              <div class="content__meals-info meals-info">
+                <div class="container content__container">
+                    <div class="meals-info__top-row">
+                        <div class="meals-info__title">
+                            <div class="meals-info__title-text">Популярные блюда</div>
+                            <div class="meals-info__title-num">12</div>
                           </div>
-                          <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
-                        </div>
-                        <div class="meal__bottom-area">
-                          <div class="meal__title-row title-row">
-                            <div class="title-row__left">
-                              <span class="title-row__text">Плов Чайханский</span>
-                              <span class="title-row__gr">250 г</span>
-                            </div>
-                            <div class="title-row__price">246 ₽</div>
-                          </div>
-                          <div class="meal__info">
-                              Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                              <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
-                          </div>
-                        </div>
-                      </li>
-                      <li class="meals__item meal">
-                          <div class="meal__top-area">
-                            <div class="meal__num-row num-row">
-                                <a href="#" class="num-row__minus">-</a>
-                                <span class="num-row__num">2</span>
-                                <a href="#" class="num-row__plus">+</a>
-                            </div>
-                            <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
-                          </div>
-                          <div class="meal__bottom-area">
-                            <div class="meal__title-row title-row">
-                              <div class="title-row__left">
-                                <span class="title-row__text">Плов Чайханский</span>
-                                <span class="title-row__gr">250 г</span>
-                              </div>
-                              <div class="title-row__price">246 ₽</div>
-                            </div>
-                            <div class="meal__info">
-                                Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
-                            </div>
-                          </div>
-                        </li>
-                        <li class="meals__item meal">
-                            <div class="meal__top-area">
-                              <div class="meal__num-row num-row">
-                                  <a href="#" class="num-row__minus">-</a>
-                                  <span class="num-row__num">2</span>
-                                  <a href="#" class="num-row__plus">+</a>
-                              </div>
-                              <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
-                            </div>
-                            <div class="meal__bottom-area">
-                              <div class="meal__title-row title-row">
-                                <div class="title-row__left">
-                                  <span class="title-row__text">Плов Чайханский</span>
-                                  <span class="title-row__gr">250 г</span>
-                                </div>
-                                <div class="title-row__price">246 ₽</div>
-                              </div>
-                              <div class="meal__info">
-                                  Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                  <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
-                              </div>
-                            </div>
-                          </li>
-                      <li class="meals__item meal">
-                          <div class="meal__top-area">
-                            <div class="meal__num-row num-row">
-                                <a href="#" class="num-row__minus">-</a>
-                                <span class="num-row__num">2</span>
-                                <a href="#" class="num-row__plus">+</a>
-                            </div>
-                            <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
-                          </div>
-                          <div class="meal__bottom-area">
-                            <div class="meal__title-row title-row">
-                              <div class="title-row__left">
-                                <span class="title-row__text">Плов Чайханский</span>
-                                <span class="title-row__gr">250 г</span>
-                              </div>
-                              <div class="title-row__price">246 ₽</div>
-                            </div>
-                            <div class="meal__info">
-                                Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
-                            </div>
-                          </div>
-                        </li>
-                        <li class="meals__item meal">
-                            <div class="meal__top-area">
-                              <div class="meal__num-row num-row">
-                                  <a href="#" class="num-row__minus">-</a>
-                                  <span class="num-row__num">2</span>
-                                  <a href="#" class="num-row__plus">+</a>
-                              </div>
-                              <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
-                            </div>
-                            <div class="meal__bottom-area">
-                              <div class="meal__title-row title-row">
-                                <div class="title-row__left">
-                                  <span class="title-row__text">Плов Чайханский</span>
-                                  <span class="title-row__gr">250 г</span>
-                                </div>
-                                <div class="title-row__price">246 ₽</div>
-                              </div>
-                              <div class="meal__info">
-                                  Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                  <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
-                              </div>
-                            </div>
-                          </li>
+                          <a href="#" class="meals-info__sort">
+                            <div class="meals-info__sort-text">По цене</div>
+                            <svg class="meals-info__sort-icon">
+                              <use xlink:href="images/sprite.svg#angle-bottom"></use>
+                            </svg>
+                          </a>
+                    </div>
+                      <ul class="meals-info__meals meals">
                           <li class="meals__item meal">
                               <div class="meal__top-area">
                                 <div class="meal__num-row num-row">
-                                    <a href="#" class="num-row__minus">-</a>
-                                        <span class="num-row__num">2</span>
-                                        <a href="#" class="num-row__plus">+</a>
+                                  <a href="#" class="num-row__minus">-</a>
+                                  <span class="num-row__num">2</span>
+                                  <a href="#" class="num-row__plus">+</a>
                                 </div>
                                 <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
                               </div>
@@ -352,8 +238,8 @@
                                 <div class="meal__top-area">
                                   <div class="meal__num-row num-row">
                                       <a href="#" class="num-row__minus">-</a>
-                                        <span class="num-row__num">2</span>
-                                        <a href="#" class="num-row__plus">+</a>
+                                      <span class="num-row__num">2</span>
+                                      <a href="#" class="num-row__plus">+</a>
                                   </div>
                                   <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
                                 </div>
@@ -367,7 +253,7 @@
                                   </div>
                                   <div class="meal__info">
                                       Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                      <a href="#" class="meal__info-more modal-trigger">подробнее</a> 
+                                      <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
                                   </div>
                                 </div>
                               </li>
@@ -390,167 +276,205 @@
                                     </div>
                                     <div class="meal__info">
                                         Камчатский краб, авокадо, свежие овощи и цитрусовый...
-                                        <a href="#" class="meal__info-more modal-trigger">подробнее</a> 
+                                        <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
                                     </div>
                                   </div>
                                 </li>
-                </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <aside class="aside main__aside">
-      <div class="aside__order order">
-        <div class="order__title">Мой заказ</div>
-        <div class="order__preview order-preview">
-          <img src="./images/content/order.png" class="order-preview__img">
-          <div class="order-preview__text">Пока пусто ;)</div>
-        </div>
-      </div>
-    </aside>
-  </main>
-  <div class="modal">
-    <div class="modal__content">
-        <div class="modal__left">
-            <img src="images/content/meal2_big.jpg" alt="meal" class="modal__img">
-          </div>
-          <div class="modal__right">
-            <div class="modal__descr-outer">
-                <div class="modal__descr">
-                    <a href="#" class="modal__close modal-trigger">
-                      <svg class="modal__close-icon">
-                        <use xlink:href="images/sprite.svg#cross"></use>
-                      </svg>
-                    </a>
-                  <div class="modal__title">
-                    <span class="modal__title-text">Стейк из говядины</span>
-                    <span class="modal__title-gr">250г</span>
-                  </div>
-                  <div class="modal__text-block">
-                    <div class="modal__text-title">Описание</div>
-                    <div class="modal__text">Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</div>
-                  </div>
-                  <div class="modal__text-block">
-                    <div class="modal__text-title">Состав</div>
-                    <div class="modal__text">Микс салатов, лосось, соус терияки, соус Унаги</div>
-                  </div>
-                  <div class="modal__value">
-                    <div class="modal__text-title modal__value-title">Пищевая ценность</div>
-                    <ul class="modal__value-list value-list">
-                      <li class="value-list__item">
-                        <div class="value-list__num">650</div>
-                        <div class="value-list__text">ккал</div>
-                      </li>
-                      <li class="value-list__item">
-                          <div class="value-list__num">34</div>
-                          <div class="value-list__text">белки</div>
-                      </li>
-                      <li class="value-list__item">
-                        <div class="value-list__num">60</div>
-                        <div class="value-list__text">жиры</div>
-                      </li>
-                      <li class="value-list__item">
-                        <div class="value-list__num">12</div>
-                        <div class="value-list__text">углеводы</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-            <div class="modal__add-block">
-              <div class="modal__add-left">
-                <div class="modal__num-row num-row num-row--modal">
-                  <a href="#" class="num-row__minus num-row__minus--modal">-</a>
-                  <span class="num-row__num num-row__num--modal">2</span>
-                  <a href="#" class="num-row__plus num-row__plus--modal">+</a>
+                            <li class="meals__item meal">
+                                <div class="meal__top-area">
+                                  <div class="meal__num-row num-row">
+                                      <a href="#" class="num-row__minus">-</a>
+                                      <span class="num-row__num">2</span>
+                                      <a href="#" class="num-row__plus">+</a>
+                                  </div>
+                                  <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
+                                </div>
+                                <div class="meal__bottom-area">
+                                  <div class="meal__title-row title-row">
+                                    <div class="title-row__left">
+                                      <span class="title-row__text">Плов Чайханский</span>
+                                      <span class="title-row__gr">250 г</span>
+                                    </div>
+                                    <div class="title-row__price">246 ₽</div>
+                                  </div>
+                                  <div class="meal__info">
+                                      Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                      <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="meals__item meal">
+                                  <div class="meal__top-area">
+                                    <div class="meal__num-row num-row">
+                                        <a href="#" class="num-row__minus">-</a>
+                                        <span class="num-row__num">2</span>
+                                        <a href="#" class="num-row__plus">+</a>
+                                    </div>
+                                    <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
+                                  </div>
+                                  <div class="meal__bottom-area">
+                                    <div class="meal__title-row title-row">
+                                      <div class="title-row__left">
+                                        <span class="title-row__text">Плов Чайханский</span>
+                                        <span class="title-row__gr">250 г</span>
+                                      </div>
+                                      <div class="title-row__price">246 ₽</div>
+                                    </div>
+                                    <div class="meal__info">
+                                        Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                        <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="meals__item meal">
+                                    <div class="meal__top-area">
+                                      <div class="meal__num-row num-row">
+                                          <a href="#" class="num-row__minus">-</a>
+                                              <span class="num-row__num">2</span>
+                                              <a href="#" class="num-row__plus">+</a>
+                                      </div>
+                                      <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
+                                    </div>
+                                    <div class="meal__bottom-area">
+                                      <div class="meal__title-row title-row">
+                                        <div class="title-row__left">
+                                          <span class="title-row__text">Плов Чайханский</span>
+                                          <span class="title-row__gr">250 г</span>
+                                        </div>
+                                        <div class="title-row__price">246 ₽</div>
+                                      </div>
+                                      <div class="meal__info">
+                                          Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                          <a href="#" class="meal__info-more  modal-trigger">подробнее</a> 
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="meals__item meal">
+                                      <div class="meal__top-area">
+                                        <div class="meal__num-row num-row">
+                                            <a href="#" class="num-row__minus">-</a>
+                                              <span class="num-row__num">2</span>
+                                              <a href="#" class="num-row__plus">+</a>
+                                        </div>
+                                        <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
+                                      </div>
+                                      <div class="meal__bottom-area">
+                                        <div class="meal__title-row title-row">
+                                          <div class="title-row__left">
+                                            <span class="title-row__text">Плов Чайханский</span>
+                                            <span class="title-row__gr">250 г</span>
+                                          </div>
+                                          <div class="title-row__price">246 ₽</div>
+                                        </div>
+                                        <div class="meal__info">
+                                            Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                            <a href="#" class="meal__info-more modal-trigger">подробнее</a> 
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="meals__item meal">
+                                        <div class="meal__top-area">
+                                          <div class="meal__num-row num-row">
+                                              <a href="#" class="num-row__minus">-</a>
+                                              <span class="num-row__num">2</span>
+                                              <a href="#" class="num-row__plus">+</a>
+                                          </div>
+                                          <img src="images/content/meal1.jpg" alt="meal" class="meal__img">
+                                        </div>
+                                        <div class="meal__bottom-area">
+                                          <div class="meal__title-row title-row">
+                                            <div class="title-row__left">
+                                              <span class="title-row__text">Плов Чайханский</span>
+                                              <span class="title-row__gr">250 г</span>
+                                            </div>
+                                            <div class="title-row__price">246 ₽</div>
+                                          </div>
+                                          <div class="meal__info">
+                                              Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                              <a href="#" class="meal__info-more modal-trigger">подробнее</a> 
+                                          </div>
+                                        </div>
+                                      </li>
+                      </ul>
                 </div>
               </div>
-              <div class="modal__add-right">
-                <div class="modal__price">246 ₽</div>
-                <a href="#" class="modal__add-text">Добавить</a>
+            </div>
+          </section>
+          <aside class="aside main__aside">
+            <div class="aside__order order">
+              <div class="order__title">Мой заказ</div>
+              <div class="order__preview order-preview">
+                <img src="./images/content/order.png" class="order-preview__img">
+                <div class="order-preview__text">Пока пусто ;)</div>
               </div>
             </div>
-          </div>
-    </div>
+          </aside>
+        </main>
   </div>
-  <!-- <div class="glide">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides tag-list">
-            <li class="tag-list__item is-active glide__slide">
-                <a href="#" class="tag-list__link">
-                  <div class="tag-list__text">Популярные</div>
-                  <div class="tag-list__num">12</div>
-                </a>
-              </li>
-              <li class="tag-list__item glide__slide">
-                  <a href="#" class="tag-list__link">
-                    <div class="tag-list__text">Популярные</div>
-                    <div class="tag-list__num">12</div>
-                  </a>
-              </li>
-              <li class="tag-list__item glide__slide">
-                  <a href="#" class="tag-list__link">
-                    <div class="tag-list__text">Популярные</div>
-                    <div class="tag-list__num">12</div>
-                  </a>
-              </li>
-              <li class="tag-list__item glide__slide">
-                  <a href="#" class="tag-list__link">
-                    <div class="tag-list__text">Популярные</div>
-                    <div class="tag-list__num">12</div>
-                  </a>
-                </li>
-                <li class="tag-list__item is-active glide__slide">
-                    <a href="#" class="tag-list__link">
-                      <div class="tag-list__text">Популярные</div>
-                      <div class="tag-list__num">12</div>
-                    </a>
-                  </li>
-                  <li class="tag-list__item glide__slide">
-                      <a href="#" class="tag-list__link">
-                        <div class="tag-list__text">Популярные</div>
-                        <div class="tag-list__num">12</div>
+  <div class="modal">
+      <div class="modal__content">
+          <div class="modal__left">
+              <img src="images/content/meal2_big.jpg" alt="meal" class="modal__img">
+            </div>
+            <div class="modal__right">
+              <div class="modal__descr-outer">
+                  <div class="modal__descr">
+                      <a href="#" class="modal__close modal-trigger">
+                        <svg class="modal__close-icon">
+                          <use xlink:href="images/sprite.svg#cross"></use>
+                        </svg>
                       </a>
-                  </li>
-                  <li class="tag-list__item glide__slide">
-                      <a href="#" class="tag-list__link">
-                        <div class="tag-list__text">Популярные</div>
-                        <div class="tag-list__num">12</div>
-                      </a>
-                  </li>
-                  <li class="tag-list__item glide__slide">
-                      <a href="#" class="tag-list__link">
-                        <div class="tag-list__text">Популярные</div>
-                        <div class="tag-list__num">12</div>
-                      </a>
-                    </li>
-                    <li class="tag-list__item is-active glide__slide">
-                        <a href="#" class="tag-list__link">
-                          <div class="tag-list__text">Популярные</div>
-                          <div class="tag-list__num">12</div>
-                        </a>
-                      </li>
-                      <li class="tag-list__item glide__slide">
-                          <a href="#" class="tag-list__link">
-                            <div class="tag-list__text">Популярные</div>
-                            <div class="tag-list__num">12</div>
-                          </a>
-                      </li>
-                      <li class="tag-list__item glide__slide">
-                          <a href="#" class="tag-list__link">
-                            <div class="tag-list__text">Популярные</div>
-                            <div class="tag-list__num">12</div>
-                          </a>
-                      </li>
-                      <li class="tag-list__item glide__slide">
-                          <a href="#" class="tag-list__link">
-                            <div class="tag-list__text">Популярные</div>
-                            <div class="tag-list__num">12</div>
-                          </a>
+                    <div class="modal__title">
+                      <span class="modal__title-text">Стейк из говядины</span>
+                      <span class="modal__title-gr">250г</span>
+                    </div>
+                    <div class="modal__text-block">
+                      <div class="modal__text-title">Описание</div>
+                      <div class="modal__text">Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</div>
+                    </div>
+                    <div class="modal__text-block">
+                      <div class="modal__text-title">Состав</div>
+                      <div class="modal__text">Микс салатов, лосось, соус терияки, соус Унаги</div>
+                    </div>
+                    <div class="modal__value">
+                      <div class="modal__text-title modal__value-title">Пищевая ценность</div>
+                      <ul class="modal__value-list value-list">
+                        <li class="value-list__item">
+                          <div class="value-list__num">650</div>
+                          <div class="value-list__text">ккал</div>
                         </li>
-        </ul>
+                        <li class="value-list__item">
+                            <div class="value-list__num">34</div>
+                            <div class="value-list__text">белки</div>
+                        </li>
+                        <li class="value-list__item">
+                          <div class="value-list__num">60</div>
+                          <div class="value-list__text">жиры</div>
+                        </li>
+                        <li class="value-list__item">
+                          <div class="value-list__num">12</div>
+                          <div class="value-list__text">углеводы</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal__add-block">
+                <div class="modal__add-left">
+                  <div class="modal__num-row num-row num-row--modal">
+                    <a href="#" class="num-row__minus num-row__minus--modal">-</a>
+                    <span class="num-row__num num-row__num--modal">2</span>
+                    <a href="#" class="num-row__plus num-row__plus--modal">+</a>
+                  </div>
+                </div>
+                <div class="modal__add-right">
+                  <div class="modal__price">246 ₽</div>
+                  <a href="#" class="modal__add-text">Добавить</a>
+                </div>
+              </div>
+            </div>
       </div>
-    </div> -->
+    </div>
   <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -15,8 +15,11 @@ const modalAddLeft = document.querySelector('.modal__add-left');
 
 const triggers = document.querySelectorAll('.modal-trigger');
 
+let y = 0;
+
 function toggleModal() {
   modal.classList.toggle('is-active');
+
   setTimeout(() => {
     modalImg.classList.toggle('is-active');
   }, 200);
@@ -49,8 +52,14 @@ function toggleModal() {
   }, 800);
 
   if (modal.classList.contains('is-active')) {
+    y = window.scrollY;
+    document.body.style.top = '-' + y + 'px';
+    document.body.style.position = 'fixed';
     disableBodyScroll(targetElement);
   } else {
+    document.body.style.top = '';
+    document.body.style.position = '';
+    window.scrollTo(0, y);
     enableBodyScroll(targetElement);
   }
 }
@@ -71,9 +80,7 @@ triggers.forEach((el) => {
 window.addEventListener('click', windowOnClick);
 
 new Glide('.glide', {
-  // type: 'carousel',
   perView: 10,
-  // gap: 40,
 }).mount();
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
