@@ -15,8 +15,6 @@ const modalAddLeft = document.querySelector('.modal__add-left');
 
 const triggers = document.querySelectorAll('.modal-trigger');
 
-let y = 0;
-
 function toggleModal() {
   modal.classList.toggle('is-active');
 
@@ -52,14 +50,8 @@ function toggleModal() {
   }, 800);
 
   if (modal.classList.contains('is-active')) {
-    y = window.scrollY;
-    // document.body.style.top = '-' + y + 'px';
-    // document.body.style.position = 'fixed';
     disableBodyScroll(targetElement);
   } else {
-    // document.body.style.top = '';
-    // document.body.style.position = '';
-    // window.scrollTo(0, y);
     enableBodyScroll(targetElement);
   }
 }
@@ -101,7 +93,6 @@ function toggleModalList() {
     enableBodyScroll(targetElementList);
   }
 }
-
 
 function windowOnClickList(event) {
   if (event.target === modalList) {
