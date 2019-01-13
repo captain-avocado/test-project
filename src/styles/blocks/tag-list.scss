@@ -1,16 +1,26 @@
 .tag-list {
   display: flex;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__wrapper {
     width: fit-content;
     padding: 34px 0;
     position: relative;
+
+    @include phones {
+      padding: 16px 0;
+    }
   }
 
   &__item {
-    // padding: 34px 0;
     margin-right: 30px;
-    // position: relative;
+
+    @include phones {
+      margin-right: 0;
+    }
     &.is-active {
       & .tag-list__wrapper:after {
         content: '';
@@ -21,6 +31,10 @@
         height: 2px;
         width: 29px;
         background-color: $bc-red;
+
+        @include phones {
+          display: none;
+        }
       }
       
       & .tag-list__link {

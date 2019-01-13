@@ -89,4 +89,34 @@ document.querySelectorAll('.tag-list__link').forEach((el) => {
   });
 });
 
+const modalList = document.querySelector('.modal-list');
+const targetElementList = document.querySelector('.modal-list__content');
+const triggersList = document.querySelectorAll('.modal-list-trigger');
+
+function toggleModalList() {
+  modalList.classList.toggle('is-active');
+  if (modalList.classList.contains('is-active')) {
+    disableBodyScroll(targetElementList);
+  } else {
+    enableBodyScroll(targetElementList);
+  }
+}
+
+
+function windowOnClickList(event) {
+  if (event.target === modalList) {
+    toggleModalList();
+  }
+}
+
+triggersList.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModalList();
+  });
+});
+
+window.addEventListener('click', windowOnClickList);
+
+
 
