@@ -12,15 +12,15 @@ const colors = require('ansi-colors');
 const config = require('../config');
 
 const processors = [
-  // pxtorem({
-  //   rootValue: 18,
-  //   unitPrecision: 5,
-  //   propList: ['*'],
-  //   selectorBlackList: [],
-  //   replace: true,
-  //   mediaQuery: false,
-  //   minPixelValue: 0
-  // }),
+  pxtorem({
+    // rootValue: 18,
+    unitPrecision: 5,
+    propList: ['*'],
+    selectorBlackList: [],
+    replace: true,
+    mediaQuery: false,
+    minPixelValue: 0
+  }),
   autoprefixer({
     browsers: ['last 4 version'],
     cascade: false
