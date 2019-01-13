@@ -59,7 +59,7 @@
   }
 
   &__content {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     padding: 48px 56px;
