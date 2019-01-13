@@ -84,7 +84,10 @@ window.addEventListener('click', windowOnClick);
 // }).mount();
 
 const container = document.querySelector('.tag-list');
-const ps = new PerfectScrollbar(container);
+const ps = new PerfectScrollbar(container, {
+  suppressScrollY: true,
+  wheelPropagation: true,
+});
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {
