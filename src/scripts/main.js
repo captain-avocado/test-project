@@ -77,8 +77,11 @@ triggers.forEach((el) => {
   });
 });
 
-window.addEventListener('click', windowOnClick);
-window.addEventListener('touchend', windowOnClick);
+if (window.innerWidth > 450) {
+  window.addEventListener('click', windowOnClick);
+} else {
+  window.addEventListener('touchend', windowOnClick);
+}
 
 // new Glide('.glide', {
 //   perView: 10,
@@ -97,7 +100,7 @@ document.querySelectorAll('.tag-list__link').forEach((el) => {
 });
 
 const modalList = document.querySelector('.modal-list');
-const targetElementList = document.querySelector('.modal-list__content');
+const targetElementList = document.querySelector('.modal-list__box');
 const triggersList = document.querySelectorAll('.modal-list-trigger');
 
 function toggleModalList() {
@@ -122,8 +125,11 @@ triggersList.forEach((el) => {
   });
 });
 
-window.addEventListener('click', windowOnClickList);
-window.addEventListener('touchend', windowOnClickList);
+if (window.innerWidth > 450) {
+  window.addEventListener('click', windowOnClickList);
+} else {
+  window.addEventListener('touchend', windowOnClickList);
+}
 
 
 
