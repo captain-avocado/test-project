@@ -1,7 +1,8 @@
 .tag-list {
   display: flex;
   position: relative;
-  min-width: 1415px;
+
+  // min-width: 1415px;
   
   @include phones {
     flex-direction: column;
