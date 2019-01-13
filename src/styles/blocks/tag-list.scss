@@ -1,5 +1,6 @@
 .tag-list {
   display: flex;
+  position: relative;
 
   @include phones {
     flex-direction: column;
@@ -17,6 +18,10 @@
 
   &__item {
     margin-right: 30px;
+    
+    &:last-of-type {
+      padding-right: 70px;
+    }
 
     @include phones {
       margin-right: 0;

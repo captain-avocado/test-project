@@ -77,8 +77,9 @@ window.addEventListener('click', windowOnClick);
 // }).mount();
 
 
-const container = document.querySelector('.container--title');
+const container = document.querySelector('.tag-list');
 const ps = new PerfectScrollbar(container);
+// const ms = new PerfectScrollbar(document.querySelector('.wrapper'));
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {

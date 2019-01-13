@@ -3,6 +3,10 @@ body {
   color: $text-black;
 }
 
+// .wrapper {
+//   position: relative;
+// }
+
 .container {
   width: 89%;
 
@@ -30,7 +34,7 @@ body {
   opacity: 0;
   transition: background-color .2s linear, opacity .2s linear;
   -webkit-transition: background-color .2s linear, opacity .2s linear;
-  height: 15px;
+  height: 12px;
   /* there must be 'bottom' or 'top' for ps__rail-x */
   bottom: 0px;
   /* please don't change 'position' */
@@ -105,7 +109,7 @@ body {
 .ps__rail-x:focus > .ps__thumb-x,
 .ps__rail-x.ps--clicking .ps__thumb-x {
   background-color: #999;
-  height: 11px;
+  height: 9px;
 }
 
 .ps__rail-y:hover > .ps__thumb-y,
