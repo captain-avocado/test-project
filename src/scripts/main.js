@@ -88,10 +88,13 @@ if (window.innerWidth > 450) {
 // }).mount();
 
 const container = document.querySelector('.tag-list');
-const ps = new PerfectScrollbar(container, {
+new PerfectScrollbar(container, {
   suppressScrollY: true,
   wheelPropagation: true,
 });
+
+const modalContainer = document.querySelector('.modal-list__content');
+new PerfectScrollbar(modalContainer); 
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {

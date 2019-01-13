@@ -26,27 +26,23 @@
     bottom: -400px;
     transition: bottom .35s;
 
-    max-height: 90vh;
+    // height: 90vh;
     background-color: #fff;
     border-radius: 5px;
   
     display: flex;
 
-    &:after, &:before {
+    &:after {
       content: '';
       position: absolute;
       left: 0;
-      right: 0;
+      right: 15px;
       height: 140px;
       background: linear-gradient(359.18deg, #FFFFFF 19.3%, rgba(255, 255, 255, 0) 83.57%);
     }
 
     &:after {
       bottom: 0;
-    }
-
-    &:before {
-      top: 0;
     }
 
     @include phones {
@@ -59,7 +55,14 @@
   }
 
   &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow-y: scroll;
+    // height: 65vh;
+
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     padding: 48px 56px;
