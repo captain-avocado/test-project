@@ -5,19 +5,17 @@
   }
 
   &__section {
-    width: 85%;
+    width: 83%;
     @include phones {
       width: 100%;
     }
-    // flex: 1;
   }
 
   &__aside {
-    width: 15%;
+    width: 17%;
     @include phones {
       width: 100%;
       border-top: 1px solid #efefef;
     }
-    // width: 325px;
   }
 }

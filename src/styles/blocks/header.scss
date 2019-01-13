@@ -1,5 +1,7 @@
 .header {
   display: flex;
+  justify-content: flex-end;
+  position: relative;
   border-bottom: 1px solid $border-gray;
 
   @include phones {
@@ -11,20 +13,28 @@
   &__menus {
     display: flex;
     justify-content: center;
-    border-right: 1px solid $border-gray;
     align-items: center;
-    flex: 1;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     @include phones {
       border: none;
       width: 66.66%;
       justify-content: space-around;
-      flex: none;
     }
   }
 
   &__logo {
     margin: 0 16px;
+  }
+
+  &__acc {
+    border-left: 1px solid $border-gray;
+    @include phones {
+      border: 0;
+    }
   }
 
   &__menu {

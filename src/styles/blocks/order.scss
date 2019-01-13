@@ -14,9 +14,11 @@
   &__title {
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 30px;
 
     @include phones {
       margin-right: 5px;
+      margin-bottom: 0;
     }
   }
 
