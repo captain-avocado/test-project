@@ -60,6 +60,8 @@
 
   &__content {
     overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     padding: 48px 56px;
     margin-bottom: 35px;
   }

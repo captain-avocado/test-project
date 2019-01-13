@@ -44,12 +44,11 @@
     bottom: -400px;
     transition: bottom .35s;
 
-    max-height: 100vh;
+    height: 100vh;
     background-color: #fff;
     border-radius: 5px;
     
     display: flex;   
-
 
     @include phones {
       right: 0;
@@ -114,7 +113,9 @@
     position: relative;
     background-color: #E8EAED;
 
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 
     @include phones {
       position: static;

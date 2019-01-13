@@ -78,6 +78,7 @@ triggers.forEach((el) => {
 });
 
 window.addEventListener('click', windowOnClick);
+window.addEventListener('touchend', windowOnClick);
 
 // new Glide('.glide', {
 //   perView: 10,
@@ -122,6 +123,7 @@ triggersList.forEach((el) => {
 });
 
 window.addEventListener('click', windowOnClickList);
+window.addEventListener('touchend', windowOnClickList);
 
 
 
