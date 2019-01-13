@@ -44,7 +44,7 @@
     bottom: -400px;
     transition: bottom .35s;
 
-    max-height: 90vh;
+    max-height: 100vh;
     background-color: #fff;
     border-radius: 5px;
     
@@ -113,6 +113,8 @@
   &__right {
     position: relative;
     background-color: #E8EAED;
+
+    overflow: auto;
 
     @include phones {
       position: static;
