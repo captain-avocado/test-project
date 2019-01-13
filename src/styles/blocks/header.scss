@@ -31,6 +31,9 @@
     &--right {
       margin-left: 40px;
     }
+    &--left {
+      margin-right: 40px;
+    }
     @include phones {
       display: none;
     }
