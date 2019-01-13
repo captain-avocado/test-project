@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     border-right: 1px solid $border-gray;
+    align-items: center;
     flex: 1;
 
     @include phones {
@@ -23,7 +24,7 @@
   }
 
   &__logo {
-    margin: 8px 16px;
+    margin: 0 16px;
   }
 
   &__menu {
