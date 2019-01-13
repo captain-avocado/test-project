@@ -81,10 +81,8 @@ window.addEventListener('click', windowOnClick);
 //   perView: 10,
 // }).mount();
 
-
 const container = document.querySelector('.tag-list');
-// const ps = new PerfectScrollbar(container);
-// const ms = new PerfectScrollbar(document.querySelector('.wrapper'));
+const ps = new PerfectScrollbar(container);
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {
