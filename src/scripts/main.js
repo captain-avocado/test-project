@@ -1,5 +1,6 @@
 import bodyScrollLock from 'body-scroll-lock';
 import Glide from '@glidejs/glide';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
@@ -71,9 +72,13 @@ triggers.forEach((el) => {
 
 window.addEventListener('click', windowOnClick);
 
-new Glide('.glide', {
-  perView: 10,
-}).mount();
+// new Glide('.glide', {
+//   perView: 10,
+// }).mount();
+
+
+const container = document.querySelector('.container--title');
+const ps = new PerfectScrollbar(container);
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {
@@ -108,6 +113,7 @@ triggersList.forEach((el) => {
 });
 
 window.addEventListener('click', windowOnClickList);
+
 
 
 

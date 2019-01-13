@@ -40,12 +40,11 @@
   &__content {
     position: absolute;
     left: 0;
-    right: -17px;
+    right: 0;
     bottom: -400px;
     transition: bottom .35s;
 
     max-height: 90vh;
-    overflow-y: scroll;
     background-color: #fff;
     border-radius: 5px;
     
