@@ -1,6 +1,6 @@
 .meals-info {
 
-  padding-right: 47px;
+  padding-right: 70px;
   @include phones {
     padding-right: 0;
     justify-content: center;
@@ -8,7 +8,6 @@
 
   &__title {
     display: flex;
-    margin-bottom: 50px;
   }
 
   &__title-text {
@@ -32,7 +31,8 @@
   &__top-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
+    margin-bottom: 60px;
   }
 
   &__sort {
