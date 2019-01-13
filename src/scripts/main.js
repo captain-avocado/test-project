@@ -1,9 +1,14 @@
 import bodyScrollLock from 'body-scroll-lock';
-import Glide from '@glidejs/glide';
+// import Glide from '@glidejs/glide';
 import PerfectScrollbar from 'perfect-scrollbar';
 
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+const BodyScrollOptions = {
+  reserveScrollBarGap: true,
+};
+
 const modal = document.querySelector('.modal');
 const targetElement = document.querySelector('.modal__content');
 const modalImg = document.querySelector('.modal__img');
@@ -51,9 +56,9 @@ function toggleModal() {
   }, 800);
 
   if (modal.classList.contains('is-active')) {
-    disableBodyScroll(targetElement);
+    disableBodyScroll(targetElement, BodyScrollOptions);
   } else {
-    enableBodyScroll(targetElement);
+    enableBodyScroll(targetElement, BodyScrollOptions);
   }
 }
 
@@ -78,7 +83,7 @@ window.addEventListener('click', windowOnClick);
 
 
 const container = document.querySelector('.tag-list');
-const ps = new PerfectScrollbar(container);
+// const ps = new PerfectScrollbar(container);
 // const ms = new PerfectScrollbar(document.querySelector('.wrapper'));
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
