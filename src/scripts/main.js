@@ -66,8 +66,8 @@ function windowOnClick(event) {
   if (event.target === modal) {
     toggleModal();
   }
-  console.log(ps.reach.x); // => 'start' or 'end' or null
-  console.log(ps.reach.y);
+  // console.log(ps.reach.x); // => 'start' or 'end' or null
+  // console.log(ps.reach.y);
 }
 
 triggers.forEach((el) => {
