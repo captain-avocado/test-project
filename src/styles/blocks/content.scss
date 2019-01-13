@@ -1,5 +1,4 @@
 .content {
-  border-right: 1px solid $border-gray;
   @include phones {
     border: none;
   }
@@ -10,8 +9,7 @@
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid $border-gray;
-
-    margin-bottom: 60px;
+    border-right: 1px solid $border-gray;
 
     position: relative;
 
@@ -23,7 +21,7 @@
       height: 100%;
       width: 150px;
       background: linear-gradient(270.17deg, #FFFFFF 9.25%, rgba(255, 255, 255, 0) 188.53%);
-      // border: inherit;
+      border-right: .0625rem solid #efefef;
     }
 
     @include phones {
@@ -31,6 +29,8 @@
     }
   }
   &__meals-info {
+    padding-top: 60px;
+    border-right: 1px solid $border-gray;
     width: 100%;
     display: flex;
     justify-content: flex-end;
