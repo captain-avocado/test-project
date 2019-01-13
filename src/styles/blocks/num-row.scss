@@ -1,5 +1,5 @@
 .num-row {
-
+  font-weight: 600;
   &--modal {
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@
   &__num {
     margin-right: 15px;
     color: $bc-red;
+    font-size: 12px;
 
     &--modal {
       margin-right: 0;
