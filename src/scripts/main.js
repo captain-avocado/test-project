@@ -18,7 +18,7 @@ const modalValueTitle = document.querySelector('.modal__value-title');
 const modalValueItems = document.querySelectorAll('.value-list__item');
 const modalAdd = document.querySelector('.modal__add-block');
 const modalAddLeft = document.querySelector('.modal__add-left');
-
+const modalIcon = document.querySelector('.modal__close');
 const triggers = document.querySelectorAll('.modal-trigger');
 
 function toggleModal() {
@@ -30,6 +30,10 @@ function toggleModal() {
   setTimeout(() => {
     modalTitle.classList.toggle('is-active');
   }, 200);
+
+  setTimeout(() => {
+    modalIcon.classList.toggle('is-active');
+  }, 400);
 
   setTimeout(() => {
     modalTextBlocks[0].classList.toggle('is-active');
@@ -95,12 +99,11 @@ new PerfectScrollbar(container, {
 
 var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 if (iOS) {
-  console.log('YE');
   const modalListContainer = document.querySelector('.modal-list__content');
   new PerfectScrollbar(modalListContainer);
+  const modalContainer = document.querySelector('.modal__right');
+  new PerfectScrollbar(modalContainer);
 } 
-const modalContainer = document.querySelector('.modal__right');
-new PerfectScrollbar(modalContainer);
 
 
 // window.onresize = function() {
