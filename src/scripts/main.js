@@ -97,8 +97,11 @@ new PerfectScrollbar(container, {
   wheelPropagation: true,
 });
 
-var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+// var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+const iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+
 if (iOS) {
+  window.addEventListener('touchend', windowOnClickList);
   const modalListContainer = document.querySelector('.modal-list__content');
   new PerfectScrollbar(modalListContainer, {
     swipeEasing: false,
