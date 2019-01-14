@@ -100,7 +100,9 @@ new PerfectScrollbar(container, {
 var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 if (iOS) {
   const modalListContainer = document.querySelector('.modal-list__content');
-  new PerfectScrollbar(modalListContainer);
+  new PerfectScrollbar(modalListContainer, {
+    swipeEasing: false,
+  });
   const modalContainer = document.querySelector('.modal__right');
   new PerfectScrollbar(modalContainer);
 } 
