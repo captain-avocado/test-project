@@ -93,8 +93,20 @@ new PerfectScrollbar(container, {
   wheelPropagation: true,
 });
 
-const modalContainer = document.querySelector('.modal-list__content');
-new PerfectScrollbar(modalContainer); 
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+if (iOS) {
+  console.log('YE');
+  const modalListContainer = document.querySelector('.modal-list__content');
+  new PerfectScrollbar(modalListContainer);
+} 
+const modalContainer = document.querySelector('.modal__right');
+new PerfectScrollbar(modalContainer);
+
+
+// window.onresize = function() {
+//   document.querySelector('.modal__content').height = window.innerHeight;
+// }
+// window.onresize();
 
 document.querySelectorAll('.tag-list__link').forEach((el) => {
   el.addEventListener('click', (e) => {

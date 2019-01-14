@@ -4,7 +4,7 @@
   // top: 0;
   z-index: 10000;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #00000080;
   opacity: 0;
   overflow: hidden;
@@ -30,6 +30,7 @@
 
     @include phones {
       margin-bottom: 14px;
+      font-size: 17px;
     }
 
     @include phones-small {
@@ -44,7 +45,7 @@
     bottom: -400px;
     transition: bottom .35s;
 
-    height: 100vh;
+    max-height: 100vh;
     background-color: #fff;
     border-radius: 5px;
     
@@ -56,7 +57,8 @@
       top: 0;
       left: 0;
       right: 0;
-      min-height: 100vh;
+      // min-height: 100vh;
+      height: 100vh;
       // max-height: 100vh;
       // height: 100vh;
       // overflow: hidden;
@@ -89,7 +91,8 @@
     background-color: #fff;
     
     @include phones {
-      height: 40vh;
+      // height: 40vh;
+      min-height: 40%;
       flex: none;
     }
 
@@ -118,7 +121,8 @@
     -webkit-overflow-scrolling: touch;
 
     @include phones {
-      position: static;
+      // position: static;
+      position: relative;
       flex: 1;
       display: flex;
       flex-direction: column;
